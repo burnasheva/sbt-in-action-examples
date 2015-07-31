@@ -10,13 +10,14 @@ val gitHeadCommitSha = taskKey[String]("Determines the current git commit SHA")
 
 val makeVersionProperties = taskKey[Seq[File]]("Creates a version.properties file we can find at runtime.")
 
+scalaVersion := "2.11.6"
 
 // Common settings/definitions for the build
 
 def PreownedKittenProject(name: String): Project = (
   Project(name, file(name))
   settings(
-    libraryDependencies += "org.specs2" %% "specs2" % "1.14" % "test"
+    libraryDependencies += "org.scalatest" % "scalatest_2.11" % "2.2.4" % "test"
   )
 )
 

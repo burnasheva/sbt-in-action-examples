@@ -2,6 +2,8 @@ name := "preowned-kittens"
 
 version := "1.0"
 
-scalaVersion := "2.10.4"
+scalaVersion := "2.11.7"
 
-libraryDependencies += "org.specs2" % "specs2_2.10" % "2.3.2" % "test"
+resolvers += "scalaz-bintray" at "http://dl.bintray.com/scalaz/releases"
+
+libraryDependencies += "org.specs2" %% "specs2-core" % "3.6.4" % "test"

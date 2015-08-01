@@ -15,6 +15,7 @@ object LogicSpec2 extends Specification {
       val prefs = BuyerPreferences(List("female", "calico"))
       val result = Logic.matchLikelihood(tabby, prefs) 
       result must beLessThan(0.001)
+      result must beGreaterThan(10.001)
     }
   }
 }

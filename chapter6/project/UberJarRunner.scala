@@ -2,6 +2,7 @@ import sbt._
 
 trait UberJarRunner {
   def start(): Unit
+  
   def stop(): Unit
 }
 
